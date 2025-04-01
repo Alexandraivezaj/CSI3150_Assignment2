@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Reveal UI</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Interactive Reveal What’s that Animal UI</h1>
+        <p>Click on the buttons below to reveal the animal images</p>
+      </header>
+
+      <div id="feature">
+        <div id="cat" class="feature">
+          <img src="assets/tabby-cat.jpg" alt="Cat" />
+          <button onclick="hideAnimal('cat')">Hide Result</button>
+        </div>
+
+        <div id="dog" class="feature">
+          <img src="assets/dog.jpg" alt="Dog" />
+          <button onclick="hideAnimal('dog')">Hide Result</button>
+        </div>
+
+        <div id="cow" class="feature">
+          <img src="assets/cow.jpg" alt="Cow" />
+          <button onclick="hideAnimal('cow')">Hide Result</button>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button onclick="showAnimal('cat')">Reveal a CAT</button>
+        <button onclick="showAnimal('dog')">Reveal a DOG</button>
+        <button onclick="showAnimal('cow')">Reveal a COW</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
